@@ -1,10 +1,19 @@
 body {
     min-width: 100vw;
     min-height: 100vh;
+    background-image: -webkit-gradient(linear, left top, right top, from(#9198e5), to(#e66465));
+    background-image: -webkit-linear-gradient(left, #9198e5, #e66465);
+    background-image: -o-linear-gradient(left, #9198e5, #e66465);
     background-image: linear-gradient(to right, #9198e5, #e66465);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: monospace;
     font-size: 2em;
 }
@@ -19,13 +28,20 @@ a {
     background-color: rgba(0, 0, 0, 1);
     padding: 2em 4em;
     color: white;
+    -webkit-transition-property: all;
+    -o-transition-property: all;
     transition-property: all;
-    transition-duration: 0.2s;
-    transition-timing-function: linear;
+    -webkit-transition-duration: 0.2s;
+         -o-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
 }
 
 a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     border: solid 1px white;
-    box-shadow: -2px 2px 5px black;
+    -webkit-box-shadow: -2px 2px 5px black;
+            box-shadow: -2px 2px 5px black;
 }
