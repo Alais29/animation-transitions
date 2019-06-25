@@ -1,0 +1,31 @@
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #9198e5, #e66465);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+div {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    border: solid 1px #3b3b3b;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 2em 4em;
+    color: white;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 1px white;
+    box-shadow: -2px 2px 5px black;
+}

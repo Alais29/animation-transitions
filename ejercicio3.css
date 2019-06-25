@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.sky {
+  background-color: lightskyblue;
+  flex-grow: 1;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.sun {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 20px;
+  animation-name: opacity;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  animation-name: opacity;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+h1,
+p {
+  color: white;
+  font-family: Arial;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.sand {
+  background-color: bisque;
+  /*flex-grow: 1.5;*/
+  position: relative;
+  flex-basis: 250px;
+  flex-shrink: 0;
+}
+
+.palm {
+  position: absolute;
+  top: -80px;
+  right: 35%;
+  opacity: 0;
+  animation-name: opacity;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.lady {
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+}
+
+.umbrella {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  animation-name: move-right;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.ball {
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  animation-name: move-left;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+/* KEYFRAMES */
+@keyframes move-right {
+  0% {
+    left: -100px;
+    opacity: 1;
+  }
+
+  100% {
+    left: 100px;
+    opacity: 1;
+  }
+}
+
+@keyframes move-left {
+  0% {
+    right: -100px;
+    opacity: 1;
+  }
+
+  100% {
+    right: 250px;
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
